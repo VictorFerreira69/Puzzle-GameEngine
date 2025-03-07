@@ -9,7 +9,7 @@ public class PlayerMove : MonoBehaviour
     float horizontal;
     [SerializeField] float speedX = 5;
     [SerializeField] float jumpForce = 200;
-    [SerializeField] float swimsForce = 250;
+  //  [SerializeField] float swimsForce = 250;
 
     void Start()
     {
@@ -21,10 +21,10 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Fire3"))
-        {
-            rb.AddForce(new Vector2(0, -swimsForce));
-        }
+       // if (Input.GetButtonDown("Fire3"))
+       // {
+        //    rb.AddForce(new Vector2(0, -swimsForce));
+       // }
         if (Input.GetButtonDown("Jump"))
         {
             rb.AddForce(new Vector2(0, jumpForce));
