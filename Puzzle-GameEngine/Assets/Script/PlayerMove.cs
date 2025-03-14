@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float jumpForce = 200;
     [SerializeField] float swimsForce = 250;
     float horizontal;
+    private bool isGrounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -21,20 +22,48 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        if (horizontal < 0)
+        {
+            if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+            }
+        }
+        else if (horizontal > 0)
+        {
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+            }
+        }
         if (Input.GetButtonDown("Fire3"))
         {
             rb.AddForce(new Vector2(0, -swimsForce));
         }
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.AddForce(new Vector2(0, jumpForce));
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
     private void FixedUpdate()// Para o uso da  Fisica
     {
         rb.AddForce(new Vector2(horizontal * speedX,  0), ForceMode2D.Force);
     }
-   
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
+
 
 
 }

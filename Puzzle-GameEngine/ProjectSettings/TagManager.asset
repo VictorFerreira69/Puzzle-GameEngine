@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Esteira
+  - Ground
   layers:
   - Default
   - TransparentFX
