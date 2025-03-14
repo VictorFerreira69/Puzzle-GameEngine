@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 17715696}
   - component: {fileID: 17715698}
   - component: {fileID: 17715697}
+  - component: {fileID: 17715699}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (7)
   m_TagString: Untagged
@@ -234,6 +235,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &17715699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17715695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: 
+  parede: {fileID: 0}
+  trampolim: {fileID: 0}
 --- !u!1 &29800796
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +263,7 @@ GameObject:
   - component: {fileID: 29800797}
   - component: {fileID: 29800799}
   - component: {fileID: 29800798}
+  - component: {fileID: 29800800}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (3)
   m_TagString: Untagged
@@ -345,6 +364,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &29800800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29800796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: 
+  parede: {fileID: 0}
+  trampolim: {fileID: 0}
 --- !u!1 &190814510
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471325965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.66, y: 5.04, z: 0}
+  m_LocalPosition: {x: 8.92, y: 5.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7763,6 +7799,7 @@ GameObject:
   - component: {fileID: 603566516}
   - component: {fileID: 603566518}
   - component: {fileID: 603566517}
+  - component: {fileID: 603566519}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (6)
   m_TagString: Untagged
@@ -7863,6 +7900,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &603566519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603566515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: 
+  parede: {fileID: 0}
+  trampolim: {fileID: 0}
 --- !u!1 &799567702
 GameObject:
   m_ObjectHideFlags: 0
@@ -7932,6 +7986,7 @@ GameObject:
   - component: {fileID: 1017535118}
   - component: {fileID: 1017535120}
   - component: {fileID: 1017535119}
+  - component: {fileID: 1017535121}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (1)
   m_TagString: Untagged
@@ -8032,6 +8087,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1017535121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017535117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: trampolim
+  parede: {fileID: 0}
+  trampolim: {fileID: 1077128283}
 --- !u!1 &1054087928
 GameObject:
   m_ObjectHideFlags: 0
@@ -8121,6 +8193,7 @@ GameObject:
   - component: {fileID: 1073580691}
   - component: {fileID: 1073580693}
   - component: {fileID: 1073580692}
+  - component: {fileID: 1073580694}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (5)
   m_TagString: Untagged
@@ -8221,6 +8294,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1073580694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073580690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: 
+  parede: {fileID: 0}
+  trampolim: {fileID: 0}
 --- !u!1 &1077128283
 GameObject:
   m_ObjectHideFlags: 0
@@ -8240,7 +8330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!250 &1077128284
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -8455,6 +8545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552066565}
   - component: {fileID: 1552066564}
+  - component: {fileID: 1552066566}
   m_Layer: 0
   m_Name: Parede
   m_TagString: Untagged
@@ -8522,13 +8613,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552066563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.4682, y: 1.4476, z: 0}
+  m_LocalPosition: {x: 4.38, y: 1.4476, z: 0}
   m_LocalScale: {x: 1.4364239, y: 10.705126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1552066566
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552066563}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1683315157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8975,6 +9092,7 @@ GameObject:
   - component: {fileID: 1858009131}
   - component: {fileID: 1858009133}
   - component: {fileID: 1858009132}
+  - component: {fileID: 1858009134}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0
   m_TagString: Untagged
@@ -9075,6 +9193,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1858009134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858009130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: 
+  parede: {fileID: 0}
+  trampolim: {fileID: 0}
 --- !u!1 &1876751614
 GameObject:
   m_ObjectHideFlags: 0
@@ -9086,6 +9221,7 @@ GameObject:
   - component: {fileID: 1876751615}
   - component: {fileID: 1876751617}
   - component: {fileID: 1876751616}
+  - component: {fileID: 1876751618}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (2)
   m_TagString: Untagged
@@ -9186,6 +9322,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1876751618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876751614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: 
+  parede: {fileID: 0}
+  trampolim: {fileID: 0}
 --- !u!1 &1916014556
 GameObject:
   m_ObjectHideFlags: 0
@@ -9197,6 +9350,7 @@ GameObject:
   - component: {fileID: 1916014557}
   - component: {fileID: 1916014559}
   - component: {fileID: 1916014558}
+  - component: {fileID: 1916014560}
   m_Layer: 0
   m_Name: pixilart-sprite - Kopi_0 (4)
   m_TagString: Untagged
@@ -9297,6 +9451,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1916014560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916014556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d9620298c55d64ea2b1bf4fa6fb0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normall: {fileID: 618521491, guid: d1688852462027448af25437288a06ff, type: 3}
+  abaixo: {fileID: 930390589, guid: d1688852462027448af25437288a06ff, type: 3}
+  identificador: parede
+  parede: {fileID: 1552066563}
+  trampolim: {fileID: 0}
 --- !u!1 &1946246479
 GameObject:
   m_ObjectHideFlags: 0

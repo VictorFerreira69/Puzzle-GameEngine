@@ -45,7 +45,7 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
-    private void FixedUpdate()// Para o uso da  Fisica
+    private void FixedUpdate()
     {
         rb.AddForce(new Vector2(horizontal * speedX,  0), ForceMode2D.Force);
     }
