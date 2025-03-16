@@ -5,18 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class Porta : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite portaNormal;
+    [SerializeField] private Sprite portaAberta;
+
+    private void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = portaNormal; 
     }
 
-    // Update is called once per frame
-    void Update()
+   
+    public void AbrirPorta()
     {
-       
+        spriteRenderer.sprite = portaAberta; 
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+  private void OnTriggerExit2D(Collider2D collision)
     {
         SceneManager.LoadScene("Fase2");
     }

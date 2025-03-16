@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd12026b030ff94a9b0af6b04869a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 81
-  jumpForce: 1500
+  speedX: 1.5
+  jumpForce: 30
   swimsForce: 250
 --- !u!95 &4755286632789903642
 Animator:
@@ -160,7 +160,7 @@ Animator:
   m_GameObject: {fileID: 4755286632789903635}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d332f54d35978346a77f3fc2c8cd0ba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -12,10 +12,22 @@ public class Lever : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool alavancaAbaixada = false;
 
+   
+    public GameObject porta;
+    private SpriteRenderer portaSpriteRenderer;
+    [SerializeField] private Sprite portaNormal;
+    [SerializeField] private Sprite portaAberta;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = normal;
+
+        
+        if (porta != null)
+        {
+            portaSpriteRenderer = porta.GetComponent<SpriteRenderer>();
+        }
     }
 
     private void Update()
@@ -26,9 +38,15 @@ public class Lever : MonoBehaviour
             esteira.GetComponent<Esteira>().AlternarVelocidade();
             Debug.Log("Velocidade da esteira alterada!");
 
-            
+           
             alavancaAbaixada = !alavancaAbaixada;
             spriteRenderer.sprite = alavancaAbaixada ? abaixado : normal;
+
+           
+            if (porta != null && portaSpriteRenderer != null)
+            {
+                portaSpriteRenderer.sprite = portaAberta;
+            }
         }
     }
 
