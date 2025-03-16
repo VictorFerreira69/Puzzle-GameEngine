@@ -12,6 +12,11 @@ public class LeverFase2 : MonoBehaviour
     [SerializeField] private string identificador;
     [SerializeField] private Tilemap paredeTilemap;
     [SerializeField] private GameObject trampolim;
+    [SerializeField] private List<string> identificadoresCorretos;
+
+    private static int alavancasErradas = 0;
+    private static bool paredeDesativada = false;
+    private static bool trampolimAtivado = false;
 
     void Start()
     {
@@ -23,28 +28,68 @@ public class LeverFase2 : MonoBehaviour
     {
         if (jogadorPerto && Input.GetButtonDown("Fire1"))
         {
-            alavancaAbaixadas = !alavancaAbaixadas;
-            spriteRendererr.sprite = alavancaAbaixadas ? abaixo : normall;
-
-            switch (identificador)
+            if (!alavancaAbaixadas)
             {
-                case "parede":
-                    if (alavancaAbaixadas)
+                alavancaAbaixadas = true;
+                spriteRendererr.sprite = abaixo;
+
+                if (identificadoresCorretos.Contains(identificador))
+                {
+                    if (identificador == "parede")
+                    {
                         DesativarParede();
-                    else
-                        AtivarParede();
-                    break;
-
-                case "trampolim":
-                    if (alavancaAbaixadas)
+                        paredeDesativada = true;
+                    }
+                    else if (identificador == "trampolim")
+                    {
                         AtivarTrampolim();
-                    else
-                        DesativarTrampolim();
-                    break;
+                        trampolimAtivado = true;
+                    }
 
-                default:
-                    Debug.LogWarning("Alavanca sem ação definida: " + identificador);
-                    break;
+                    // Verificar se as duas alavancas corretas foram ativadas
+                    if (paredeDesativada && trampolimAtivado)
+                    {
+                        SumirAlavancasErradas();
+                    }
+                }
+                else
+                {
+                    alavancasErradas++;
+
+                    if (alavancasErradas >= 2)
+                    {
+                        ResetarAlavancasErradas();
+                    }
+                }
+            }
+        }
+    }
+
+    private void ResetarAlavancasErradas()
+    {
+        LeverFase2[] todasAsAlavancas = FindObjectsOfType<LeverFase2>();
+
+        foreach (LeverFase2 alavanca in todasAsAlavancas)
+        {
+            if (!alavanca.identificadoresCorretos.Contains(alavanca.identificador))
+            {
+                alavanca.alavancaAbaixadas = false;
+                alavanca.spriteRendererr.sprite = alavanca.normall;
+            }
+        }
+
+        alavancasErradas = 0;
+    }
+
+    private void SumirAlavancasErradas()
+    {
+        LeverFase2[] todasAsAlavancas = FindObjectsOfType<LeverFase2>();
+
+        foreach (LeverFase2 alavanca in todasAsAlavancas)
+        {
+            if (!alavanca.identificadoresCorretos.Contains(alavanca.identificador))
+            {
+                alavanca.gameObject.SetActive(false);
             }
         }
     }
@@ -69,47 +114,17 @@ public class LeverFase2 : MonoBehaviour
     {
         if (paredeTilemap != null)
         {
-           
             TilemapCollider2D collider = paredeTilemap.GetComponent<TilemapCollider2D>();
             if (collider != null)
             {
                 collider.enabled = false;
-                
             }
-           
 
-           
             TilemapRenderer renderer = paredeTilemap.GetComponent<TilemapRenderer>();
             if (renderer != null)
             {
                 renderer.enabled = false;
-               
             }
-          
-        }
-    }
-
-    private void AtivarParede()
-    {
-        if (paredeTilemap != null)
-        {
-            
-            TilemapCollider2D collider = paredeTilemap.GetComponent<TilemapCollider2D>();
-            if (collider != null)
-            {
-                collider.enabled = true;
-              
-            }
-            
-
-            
-            TilemapRenderer renderer = paredeTilemap.GetComponent<TilemapRenderer>();
-            if (renderer != null)
-            {
-                renderer.enabled = true;
-                
-            }
-           
         }
     }
 
@@ -118,16 +133,8 @@ public class LeverFase2 : MonoBehaviour
         if (trampolim != null)
         {
             trampolim.SetActive(true);
-          
         }
     }
 
-    private void DesativarTrampolim()
-    {
-        if (trampolim != null)
-        {
-            trampolim.SetActive(false);
-           
-        }
-    }
 }
+   
