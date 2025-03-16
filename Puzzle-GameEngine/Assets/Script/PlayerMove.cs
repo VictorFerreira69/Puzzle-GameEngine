@@ -27,12 +27,12 @@ public class PlayerMove : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        // Lógica para animação de movimento
+        
         float speed = Mathf.Abs(horizontal);
         if (speed < 0.01f) speed = 0;
         animator.SetFloat("Speed", speed);
 
-        // Flipar o personagem de acordo com a direção
+       
         if (horizontal < 0 && transform.localScale.x > 0)
         {
             transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
@@ -42,14 +42,14 @@ public class PlayerMove : MonoBehaviour
             transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
         }
 
-        // Pular
+       
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             animator.SetBool("IsJumping", true);
         }
 
-        // Nadar (Força para baixo)
+       
         if (Input.GetButtonDown("Fire3"))
         {
             rb.AddForce(new Vector2(0, -swimsForce));
@@ -58,29 +58,29 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Movimento horizontal
+        
         if (Mathf.Abs(horizontal) > 0.01f)
         {
             rb.AddForce(new Vector2(horizontal * speedX, 0), ForceMode2D.Impulse);
         }
 
-        // Verifica se o personagem está no chão (com base em um raio de verificação)
+        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Atualiza o estado da animação com base na velocidade vertical
+       
         if (rb.velocity.y == 0 && !isGrounded)
         {
-            animator.SetBool("IsJumping", false); // Garantir que a animação de pulo termine
+            animator.SetBool("IsJumping", false); 
         }
     }
 
-    // Verifica a colisão com o chão para ajustar a animação e o estado de pulo
+   
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            animator.SetBool("IsJumping", false); // Finaliza a animação de pulo
+            animator.SetBool("IsJumping", false); 
         }
     }
 
@@ -89,7 +89,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
-            animator.SetBool("IsJumping", true); // Define que o personagem está no ar
+            animator.SetBool("IsJumping", true); 
         }
     }
 }
