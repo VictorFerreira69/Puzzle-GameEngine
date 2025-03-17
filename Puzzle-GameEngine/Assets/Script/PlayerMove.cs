@@ -10,7 +10,6 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] float speedX = 5;
     [SerializeField] float jumpForce = 200;
-    [SerializeField] float swimsForce = 250;
     private float horizontal;
     private bool isGrounded = true;
     private float groundCheckRadius = 0.2f;
@@ -50,10 +49,7 @@ public class PlayerMove : MonoBehaviour
         }
 
        
-        if (Input.GetButtonDown("Fire3"))
-        {
-            rb.AddForce(new Vector2(0, -swimsForce));
-        }
+        
     }
 
     void FixedUpdate()

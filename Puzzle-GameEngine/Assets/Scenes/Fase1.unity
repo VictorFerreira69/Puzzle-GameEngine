@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 108981767}
   - component: {fileID: 108981766}
   - component: {fileID: 108981765}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01 (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 209572337}
   - component: {fileID: 209572336}
   - component: {fileID: 209572335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01 (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -463,7 +463,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 761162434}
   - component: {fileID: 761162433}
   - component: {fileID: 761162432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -826,7 +826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855114151}
   - component: {fileID: 855114150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TileColliderChao
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 1022106743}
   - component: {fileID: 1022106742}
   - component: {fileID: 1022106741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01 (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 1136446734}
   - component: {fileID: 1136446733}
   - component: {fileID: 1136446732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Esterinha
   m_TagString: Esteira
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1492590430, guid: 9958131265f54c84da36b5fb6e162c0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1380,7 +1380,7 @@ GameObject:
   - component: {fileID: 1345211289}
   - component: {fileID: 1345211288}
   - component: {fileID: 1345211287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01 (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1483,7 +1483,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1563,7 +1563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1489305862}
   - component: {fileID: 1489305863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TileColliderPilar 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1621,7 +1621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530505931}
   - component: {fileID: 1530505932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TileColliderPilar
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1679,7 +1679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566551753}
   - component: {fileID: 1566551754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TileColliderPilar 3 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1797,7 +1797,7 @@ GameObject:
   - component: {fileID: 1658937941}
   - component: {fileID: 1658937940}
   - component: {fileID: 1658937939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1900,7 +1900,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1922,7 +1922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956455319}
   - component: {fileID: 1956455320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TileColliderPilar 3 (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1982,7 +1982,7 @@ GameObject:
   - component: {fileID: 2076784275}
   - component: {fileID: 2076784274}
   - component: {fileID: 2076784273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: small_metal_spike_01 (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2085,7 +2085,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 1bad70038a5227141abb1b1fbe172a87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
