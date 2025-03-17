@@ -9135,10 +9135,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   painelDialogo: {fileID: 943857169}
   textoDialogo: {fileID: 664466155}
-  charada: "Em um labirinto de metal, oito pilares ocultam o segredo. Apenas duas
-    alavancas abrem o caminho: uma em um patamar elevado, capaz de remover a barreira,
-    e outra pr\xF3xima ao solo, concedendo um salto desafiador. Decifra o enigma
-    e avance!"
+  charada: "Duas alavancas revelam o segredo: uma desativa uma parede e a outra impulsiona
+    a a\xE7\xE3o. A alavanca que apaga a parede est\xE1 entre a queda e a ascens\xE3o,
+    em um equil\xEDbrio, sem tocar o c\xE9u nem o ch\xE3o. A alavanca que impulsiona
+    a a\xE7\xE3o est\xE1 mais pr\xF3xima do ch\xE3o, na torre oposta \xE0 parede,
+    e quem busca a impulsao deve come\xE7ar de baixo."
   botaoSair: {fileID: 557915574}
   jogador: {fileID: 2097871253}
   alavancas:
