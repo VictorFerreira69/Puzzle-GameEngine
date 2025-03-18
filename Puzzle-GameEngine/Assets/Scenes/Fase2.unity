@@ -10601,11 +10601,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4755286632789903632, guid: 3141c2c5e45f98a48bee3fac3b15c6a0, type: 3}
       propertyPath: speedX
-      value: 1.5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4755286632789903632, guid: 3141c2c5e45f98a48bee3fac3b15c6a0, type: 3}
       propertyPath: jumpForce
-      value: 30
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 4755286632789903635, guid: 3141c2c5e45f98a48bee3fac3b15c6a0, type: 3}
       propertyPath: m_Name
