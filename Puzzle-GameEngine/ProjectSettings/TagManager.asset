@@ -7,6 +7,8 @@ TagManager:
   - Esteira
   - Ground
   - SurfaceEffector
+  - Moedas
+  - Plataforma
   layers:
   - Default
   - TransparentFX
