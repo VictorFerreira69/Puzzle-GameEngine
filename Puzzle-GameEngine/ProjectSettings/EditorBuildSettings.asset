@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase3.unity
     guid: 384bcb87b7fc3c844b27321d7d44ad64
+  - enabled: 1
+    path: Assets/Scenes/Completo.unity
+    guid: 2e92d05f3b900c84892d6eb070fefde2
   m_configObjects: {}

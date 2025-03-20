@@ -5,30 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class Espinhos : MonoBehaviour
 {
-    public Sprite espinhoCima; 
-    public Sprite espinhoBaixo; 
+    public Sprite espinhoCima;
+    public Sprite espinhoBaixo;
     public float tempoTroca = 1f;
     private SpriteRenderer spriteRenderer;
-    private bool estaEmCima = true; 
+    private BoxCollider2D boxCollider;
+    private bool estaEmCima = false;
 
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>(); 
-        StartCoroutine(TrocarSprite()); 
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        StartCoroutine(TrocarSprite());
     }
 
-    
     IEnumerator TrocarSprite()
     {
         while (true)
         {
             if (estaEmCima)
             {
-                spriteRenderer.sprite = espinhoCima;
+                spriteRenderer.sprite = espinhoBaixo;
+                boxCollider.enabled = true;  
             }
             else
             {
-                spriteRenderer.sprite = espinhoBaixo;
+                spriteRenderer.sprite = espinhoCima;
+                boxCollider.enabled = false; 
             }
 
             estaEmCima = !estaEmCima;
@@ -36,13 +39,11 @@ public class Espinhos : MonoBehaviour
         }
     }
 
-    // Detecta a colisão com o jogador
-    private void OnCollisionEnter2D(Collision2D colisao)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (colisao.gameObject.CompareTag("Player") && estaEmCima)
+        if (collision.gameObject.CompareTag("Player"))
         {
-           
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-}   
+}
